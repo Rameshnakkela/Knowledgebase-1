@@ -89,5 +89,5 @@ jobs:
             $gh_add_ado_comments=$true
           }
           
-          ./ado_workitems_to_github_issues.ps1 -ado_pat "m6q3buqyjz7qcjbwmpbnnw2dcqvhwswwzg4g7xhwosq7b76yhm5a" -ado_org "HCLGurukul" -ado_project "Knowledgebase" -ado_area_path "Knowledgebase/Knowledgebase" -ado_migrate_closed_workitems $ado_migrate_closed_workitems -ado_production_run $ado_production_run -gh_pat "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" -gh_org "RameshNakkelaHCL" -gh_repo "Knowledgebase" -gh_update_assigned_to $gh_update_assigned_to -gh_assigned_to_user_suffix "${{ github.event.inputs.gh_assigned_to_user_suffix }}" -gh_add_ado_comments $gh_add_ado_comments
+          ./ado_workitems_to_github_issues.ps1 -ado_pat "m6q3buqyjz7qcjbwmpbnnw2dcqvhwswwzg4g7xhwosq7b76yhm5a" -ado_org "HCLGurukul" -ado_project "Knowledgebase" -ado_area_path "Knowledgebase" -ado_migrate_closed_workitems $ado_migrate_closed_workitems -ado_production_run $ado_production_run -gh_pat "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" -gh_org "RameshNakkelaHCL" -gh_repo "Knowledgebase" -gh_update_assigned_to $gh_update_assigned_to -gh_assigned_to_user_suffix "${{ github.event.inputs.gh_assigned_to_user_suffix }}" -gh_add_ado_comments $gh_add_ado_comments
           
