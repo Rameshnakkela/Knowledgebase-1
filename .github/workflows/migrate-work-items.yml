@@ -14,7 +14,7 @@ on:
       ado_area_path:
         description: 'ADO area path to migrate - uses the UNDER operator'
         required: true
-        default: 'Knowledgebase/Knowledgebase'
+        default: 'Knowledgebase'
       ado_migrate_closed_workitems:
         description: 'Migrate closed work items'
         required: true
@@ -89,5 +89,5 @@ jobs:
             $gh_add_ado_comments=$true
           }
           
-          ./ado_workitems_to_github_issues.ps1 -ado_pat "5qmslfzakpgo5lx6j3el7f7mnh4sbfa4ltbzumeqt2csl7bpimea" -ado_org "HCLGurukul" -ado_project "Knowledgebase" -ado_area_path "Knowledgebase" -ado_migrate_closed_workitems $ado_migrate_closed_workitems -ado_production_run $ado_production_run -gh_pat "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" -gh_org "RameshNakkelaHCL" -gh_repo "Knowledgebase" -gh_update_assigned_to $gh_update_assigned_to -gh_assigned_to_user_suffix "${{ github.event.inputs.gh_assigned_to_user_suffix }}" -gh_add_ado_comments $gh_add_ado_comments
+          ./ado_workitems_to_github_issues.ps1 -ado_pat "ty6zgvhbq3oqafpkwdm656eg4cxzutlrelxo7i4nvbtq4a72vkxq" -ado_org "HCLGurukul" -ado_project "Knowledgebase" -ado_area_path "Knowledgebase" -ado_migrate_closed_workitems $ado_migrate_closed_workitems -ado_production_run $ado_production_run -gh_pat "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" -gh_org "RameshNakkelaHCL" -gh_repo "Knowledgebase" -gh_update_assigned_to $gh_update_assigned_to -gh_assigned_to_user_suffix "${{ github.event.inputs.gh_assigned_to_user_suffix }}" -gh_add_ado_comments $gh_add_ado_comments
           
